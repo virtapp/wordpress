@@ -1,7 +1,6 @@
 version: 2
 jobs:
   build:
-    executor: docker-publisher
     environment:
       IMAGE_NAME: global-registry.virtapp.io/library/wordpress
     docker:
