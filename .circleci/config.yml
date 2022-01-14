@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    executor: docker-publisher
     environment:
       IMAGE_NAME: global-registry.virtapp.io/library/wordpress
     docker:
@@ -12,6 +13,7 @@ jobs:
           name: Build Docker image
           command: docker build -t $IMAGE_NAME:latest .
   publish-latest:
+    executor: docker-publisher
     environment:
       IMAGE_NAME: wordpress
     docker:
