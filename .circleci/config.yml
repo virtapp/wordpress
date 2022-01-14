@@ -4,7 +4,7 @@ jobs:
     environment:
       IMAGE_NAME: global-registry.virtapp.io/library/wordpress
     docker:
-      - image: circleci/buildpack-deps:stretch
+      - image: global-registry.virtapp.io/library/wordpress:latest
     steps:
       - checkout
       - setup_remote_docker
