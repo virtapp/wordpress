@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     environment:
-      IMAGE_NAME: global-registry.virtapp.io/library/wordpress
+      IMAGE_NAME: virtapp/wordpress
     docker:
       - image: circleci/buildpack-deps:stretch
     steps:
