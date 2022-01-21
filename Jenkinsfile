@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "global-registry.virtapp.io/library/wordpress"
+    registry = "global-registry.virtapp.io/library/wordpress-appflex"
     registryCredential = 'harbor-registry'
     dockerImage = ''
   }
